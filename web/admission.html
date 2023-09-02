@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <div class="dropdown">
+            <a href="admission.html">admission</a>
+            <div class="dropdown-content">
+              <a href="regular_mba.html">Regular MBA</a>
+              <a href="entrepreneurship_mba.html">Entrepreneurship MBA</a>
+            </div>
+          </div>
+          <a href="campus.html">Infrastructure</a>
+          <a href="acadamic.html">Academics</a>
+          <a href="contact.html">Placement</a>
+        </div>
+      </div>
+    <div class="form">
+        <img src="images/admision.jpg" alt="Banner" class="banner">
+        <center><h3 class="hdng">Personal Details</h3></center>
+        <form id="application-form">
+            <label for="course">The Course applied for</label>
+            <select id="course" name="course">
+                <option value="regular">Regular MBA</option>
+                <option value="entrepreneurship">Entrepreneurship MBA</option>
+            </select><br>
+
+            <label for="fullName">Name *</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="gender">Gender *</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+            <label for="transgender">Transgender</label><br>
+
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="contactNumber">Contact Number *</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required><br>
+            
+            <label for="whatsappNumber">Whatsapp Number</label>
+            <input type="tel" id="whatsappNumber" name="whatsappNumber"><br>
+
+            <label for="motherTongue">Mother Tongue *</label>
+            <input type="text" id="motherTongue" name="motherTongue" required><br>
+
+            <label for="bloodGroup">Blood Group *</label>
+            <select id="bloodGroup" name="bloodGroup" required><br>
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select><br>
+            
+
+            <label for="nationality">Nationality *</label>
+            <input type="text" id="nationality" name="nationality" required><br>
+
+            <label for="state">State *</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="district">District *</label>
+            <input type="text" id="district" name="district" required>
+
+            <label for="maritalStatus">Marital Status *</label>
+            <input type="radio" id="single" name="maritalStatus" value="single">
+            <label for="single">Single</label>
+            <input type="radio" id="married" name="maritalStatus" value="married">
+            <label for="married">Married</label>
+            <input type="radio" id="divorced" name="maritalStatus" value="divorced">
+            <label for="divorced">Divorced</label><br>
+
+            <label for="religion">Religion *</label>
+            <input type="text" id="religion" name="religion" required><br>
+
+            <label for="community">Community / Caste *</label>
+            <input type="text" id="community" name="community" required>
+
+            <label for="category">Category *</label>
+            <input type="text" id="category" name="category" required><br><br>
+
+            <center><h3 class="hdng">Permanent Address</h3></center><hr>
+            <label for="addressLine1">Address Line 1 *</label>
+            <input type="text" id="addressLine1" name="addressLine1" required>
+            
+            <label for="addressLine2">Address Line 2 *</label>
+            <input type="text" id="addressLine2" name="addressLine2" required>
+
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="stateProvince">State/Province *</label>
+            <input type="text" id="stateProvince" name="stateProvince" required>
+
+            <label for="pincode">Pincode *</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <label for="country">Country *</label>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <center><h3 class="hdng">Family Details</h3></center><hr>
+            <label for="fatherName">Father's Name</label>
+            <input type="text" id="fatherName" name="fatherName">
+
+            <label for="motherName">Mother's Name</label>
+            <input type="text" id="motherName" name="motherName">
+
+            <label for="guardianName">Parent/Guardian Name</label>
+            <input type="text" id="guardianName" name="guardianName">
+
+            <label for="guardianContactNumber">Guardian Contact Number</label>
+            <input type="tel" id="guardianContactNumber" name="guardianContactNumber">
+
+            <label for="relationship">Relationship *</label>
+            <input type="text" id="relationship" name="relationship" required><br><br>
+
+
+
+            <button type="button" id="register-button">Register</button>
+        </form>
+    </div>
+    <script src="admission.js"></script>
+    
+</body>
+</html>

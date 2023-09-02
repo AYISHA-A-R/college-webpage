@@ -1,0 +1,987 @@
+/*index.html
+/* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Style for the logo */
+.navbar-logo img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Style for the links in the navbar */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffd700; /* Change to your preferred hover color */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #444; /* Change to your preferred hover color */
+}
+
+
+
+/* Page container */
+.container {
+  background-image: url('images/index.jpg');
+  background-size: cover;
+  background-position: left top;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 50px; /* Adjust spacing as needed */
+  color: white;
+}
+
+/* Content styles */
+.content {
+  width: 100%; /* Adjust content width as needed */
+  max-width: 600px; /* Limit content width for readability */
+  
+}
+
+.content h2 {
+  font-size: 23px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content h1 {
+  font-size:56px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+/* Animation styles */
+@keyframes slide-in {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 1s ease-out;
+}
+
+
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.left-card, .center-card, .right-card {
+  background-color: #b7a7f2;
+  text-align: center;
+}
+.center-card {
+  background-color: #efb3f2;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+h3 {
+  margin-top: 0;
+}
+
+
+
+.accredited {
+  background-color: #eaacbb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.accredited img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.mba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.mba-content {
+  background-color: #f2c6c6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.mba img {
+  float: left;
+  margin-right: 20px;
+  max-width: 300px;
+  height: auto;
+}
+
+.mba h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mba h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.mba p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  background-color: #333; /* Footer background color */
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  color: white; /* Footer text color */
+}
+
+/* Animation styles */
+.animated-heading {
+  animation: fadeInUp 2s ease-in-out; /* Example animation */
+}
+
+.animated-tagline {
+  animation: fadeInUp 2s ease-in-out; /* Example animation */
+}
+
+.animated-footer {
+  animation: fadeInUp 2s ease-in-out; /* Example animation */
+}
+
+/* Example animation keyframes */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* Footer Styles */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.animated-footer {
+  animation: runningText 9s linear infinite;
+}
+
+/* Animations */
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes runningText {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/*about.html*/
+
+/* styles.css */
+
+/* Reset default margin and padding */
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Style for the logo */
+.navbar-logo img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Style for the links in the navbar */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffd700; /* Change to your preferred hover color */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #444; /* Change to your preferred hover color */
+}
+
+
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Lead Story section */
+.lead-story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.paragraphs {
+  padding: 0 20px;
+}
+
+.paragraphs h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.paragraphs p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Horizontal Card section */
+.horizontal-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  background-color: #f1d386; /* Text color */
+}
+
+.left-side, .right-side {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.left-side h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-side p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.right-side img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text Container section */
+.text-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.text-container h1, .text-container h2 {
+  color: blue;
+}
+
+.text-container p {
+  color: #050505;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Contact Details section */
+.contact-details {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-details h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-details p, .contact-details a {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+
+
+/*acadamic.html*/
+body {
+  margin:0;
+  padding:0;
+  background-color: rgb(251, 247, 242);
+}
+
+/* Header styling */
+header {
+  background-color: #F2F2F2;
+  background-image: url('images/mba.jpeg');
+  background-size: cover; /* Ensure the background image covers the header */
+  background-position: center; /* Center the background image */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 20px;
+  height: 450px; /* Set a fixed height for the header */
+}
+/* Sub-heading styling */
+.sub-heading {
+  font-size: 24px;
+  color: #3b0aed;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Paragraph styling */
+.course-details, .program-details {
+  font-size: 16px;
+  color: #0a0a0a;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Main content styling */
+main {
+  padding: 50px;
+}
+
+/* Curriculum card styling */
+.curriculum-card {
+  display: flex;
+  background-color: #eddb8b;
+  margin: 20px;
+  padding: 20px;
+}
+
+.curriculum-content {
+  flex: 1;
+  text-align: left;
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: #333333;
+  font-style: italic;
+}
+
+.curriculum-details {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+}
+.curriculum-image {
+  flex: 1;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.curriculum-image img {
+  max-width: 100%;
+  height: auto;
+}
+/* Internships card styling */
+.internships-card {
+  display: flex;
+  background-color: #8baaed;
+  margin: 20px;
+  padding: 20px;
+}
+
+.internships-image {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.internships-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.internships-content {
+  flex: 1;
+  text-align: right;
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: #333333;
+  font-style: italic;
+}
+
+.internships-details {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+/* Placement Support card styling */
+.placement-support-card {
+  display: flex;
+  background-color: #eddb8b;
+  margin: 20px;
+  padding: 20px;
+}
+
+.placement-support-content {
+  flex: 1;
+  text-align: left;
+}
+
+.sub-heading {
+  font-size: 24px;
+  color: #333333;
+  font-style: italic;
+}
+
+.placement-support-details {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.placement-support-image {
+  flex: 1;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.placement-support-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Content alignment */
+.residential-program {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 30px;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  margin-right: 20px; /* Add margin between content sections */
+}
+
+/* Headings */
+.sub-heading {
+  font-size: 24px;
+  color: #333333;
+  font-style: italic;
+}
+
+/* Paragraphs */
+.residential-details,
+.skill-training-details {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+}
+/* Center image within the mission container */
+.mission {
+  text-align: center; /* Center the content within the container */
+}
+
+
+
+
+
+
+/* Add styles for larger screens */
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+  }
+  
+  .card-image {
+    margin: 0 35px;
+  }
+  
+  .card-text {
+    flex: 1;
+    padding: 20px;
+  }
+}
+
+/* Add styles for smaller screens */
+@media (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/*admission.html*/
+/* Apply general styles to the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the form container */
+.form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Styling for form headings */
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Styling for labels */
+label {
+  display: inline-block;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for radio buttons */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: #0a0a0a;
+}
+
+/* Apply hover effect on buttons */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the banner image */
+.banner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+/*campus.html*/
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  background-color: #f3e8b2;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a3d8c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5a4e9c;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+
+/*library.html*/
+.library-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.library-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.library-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.library-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.library-info {
+  font-size: 24px;
+  color: #4a3d8c;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.centered-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-paragraph {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.main-paragraph {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.closing-paragraph {
+  font-size: 20px;
+  color: #4a3d8c;
+  font-style: italic;
+}
+
+
+
+
+
+
+/* ... (previous styles) ... */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  background-color: #f3e8b2;
+}
+
+.center {
+  background-color: #e8f3e5;
+}
+
+.right {
+  background-color: #e8e5f3;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/*placement.html*/
+
+/* ... (previous styles) ... */
+
+.placement-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.placement-header {
+  text-align: center;
+}
+
+.placement-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-heading {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-paragraph {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.h3{
+  border-radius: 2px;
+  width: fit-content;
+  border: #007bff;
+  padding: auto;
+}
